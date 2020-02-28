@@ -1,0 +1,14 @@
+.flex-j-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bd-r{
+  border: 1px solid red;
+}
+
+.bd-g{
+  border: 1px solid green;
+}
