@@ -1,10 +1,12 @@
 <template>
   <el-container class="layout">
     <el-header class="header">
-        <Header></Header>
+      <Header></Header>
     </el-header>
     <el-container>
-      <el-aside>侧边栏</el-aside>
+      <el-aside style="width:200px;">
+        <NavBar></NavBar>
+      </el-aside>
       <el-container>
         <el-main>
           <!-- 内容部分 -->
@@ -18,9 +20,10 @@
 <script>
 import Header from './layout/Header'
 import Main from './Main'
+import NavBar from './layout/NavBar'
 export default {
   name: 'Container',
-  components: { Header, Main },
+  components: { Header, Main, NavBar },
   data () {
     return {
     }
@@ -31,8 +34,19 @@ export default {
 </script>
 
 <style scoped>
-.layout .el-header{
+.layout {
+  overflow: hidden;
+  height: calc(100vh);
+  background-color: white;
+}
+.layout .el-header {
   padding: 0;
-  background-color:#161F2A;
+  background-color: #161f2a;
+}
+
+.el-aside {
+  background: #292b3b;
+  color: #333;
+  /* text-align: center; */
 }
 </style>
