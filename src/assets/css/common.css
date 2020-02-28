@@ -3,7 +3,11 @@
   justify-content: center;
   align-items: center;
 }
-
+.flex-s-b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .bd-r{
   border: 1px solid red;

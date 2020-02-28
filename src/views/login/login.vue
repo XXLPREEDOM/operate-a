@@ -39,10 +39,8 @@ export default {
     handleLogin (loginForm) {
       this.$refs[loginForm].validate((valid) => {
         if (valid) {
-          // var password = this.loginForm.password
-          // console.log(password)
           if (this.loginForm.password === '123') {
-            window.localStorage.setItem('login', 'true')
+            window.localStorage.setItem('username', this.loginForm.username)
             this.$router.push('/homePage')
           } else {
             this.$message({
