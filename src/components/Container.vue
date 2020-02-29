@@ -20,7 +20,7 @@
 <script>
 import Header from './layout/Header'
 import Main from './Main'
-import NavBar from './layout/NavBar'
+import NavBar from './layout/siderBar'
 export default {
   name: 'Container',
   components: { Header, Main, NavBar },
@@ -48,5 +48,7 @@ export default {
   background: #292b3b;
   color: #333;
   /* text-align: center; */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 </style>
