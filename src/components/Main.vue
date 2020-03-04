@@ -18,7 +18,10 @@ export default {
 
     }
   },
-  created () {},
+  created () {
+    console.log(213)
+    console.log(this.$route.path)
+  },
   mounted () {
     this.$router.push(this.$route.path)
   },
